@@ -1,0 +1,118 @@
+/* ESTILO GERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #91cfe7;
+  color: #fffefe;
+}
+
+/* Banner (foto redonda) */
+.banner {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  background-image: url('Imagens/foto Pedro Mendes .jpg'); /* Ajuste o caminho da imagem */
+  background-position: center;
+  background-size: cover;
+}
+
+/* Cabeçalho */
+header {
+  background: #2df0b5;
+  padding: 1rem 0;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* deixa o menu quebrar no celular */
+}
+
+nav a {
+  color: #fdfdfd;
+  text-decoration: none;
+  background: #7ef71c;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  background: rgb(102, 37, 255);
+}
+
+/* Conteúdo */
+main {
+  max-width: 900px; /* limita largura no PC */
+  margin: auto;
+  padding: 20px;
+}
+
+main p {
+  padding: 10px;
+  line-height: 1.6;
+  text-align: justify; /* deixa o texto justificado */
+}
+
+/* Rodapé */
+footer {
+  background: #297eee;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+footer .social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  background: #1874ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  background: rgb(102, 37, 255);
+  color: #fff;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    width: 120px;
+    height: 120px;
+  }
+}
