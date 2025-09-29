@@ -20,7 +20,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background: #2df0b5;
+  background: #026c96;
   padding: 1rem 0;
 }
 
@@ -38,7 +38,7 @@ nav ul {
 nav a {
   color: #fdfdfd;
   text-decoration: none;
-  background: #7ef71c;
+  background: #00af3b;
   padding: 10px 15px;
   font-weight: bold;
   border-radius: 6px;
@@ -115,4 +115,50 @@ footer .social a:hover {
     width: 120px;
     height: 120px;
   }
+}
+footer .social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  background: #25d366;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .social a:hover {
+  background: #25d366; /* cor oficial do WhatsApp */
+  color: #fff;
+}
+ 
+/* Botão WhatsApp */
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-whatsapp i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
 }
